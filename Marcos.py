@@ -225,18 +225,7 @@ def Dificil():
 #si la posicion derecha de la linea canvas se pasa de geometry detener rectangulo
 		if x2<505:
 			Markus2.move(rectangulo,30, 0)
-			"""
-#mover linea arriba izquiera
-	def lai():#linea arriba izquierda
-		(r1,r2,r3,r4)=Markus2.coords(rectangulo2)
-		if r1>0:
-			Markus2.move(rectangulo2,-30,0)
-#mover linea arriba derecha
-	def lad():#linea arriba derecha
-		(r1,r2,r3,r4)=Markus2.coords(rectangulo2)
-		if r3>505:
-			Markus2.move(rectangulo2,30,0)
-			"""
+			
 	#creo los botones que mueven la linea
 	b5=Button(Markus,text="→",command=derecha)
 	b5.place(x=400, y=630, width=80, height=50)
@@ -245,16 +234,7 @@ def Dificil():
 	b6=Button(Markus,text="←",command=izquierda)
 	b6.place(x=30, y=630, width=80, height=50)
 	b6.configure(bg="blue")
-	"""
-#botones de linea arriba
-	b7=Button(Markus,text="→",command=lad)
-	b7.place(x=400, y=570, width=80, height=50)
-	b7.configure(bg="blue")
-
-	b8=Button(Markus,text="←",command=lai)
-	b8.place(x=30, y=570, width=80, height=50)
-	b8.configure(bg="blue")
-	"""
+	
 #creo la ventana, le doy tamaño, color y le pongo titulo
 Markus= Tk()
 Markus.title("PING PONG")
